@@ -13,7 +13,7 @@ const Side = () => {
         <div id="cancel"><ArrowLeft /></div>
       </label>
       <div class="sidebar">
-        <header>My Menu</header>
+        <header>total revenu</header>
         <div className="heading">
           <div>
             <span>Shortcuts</span>
