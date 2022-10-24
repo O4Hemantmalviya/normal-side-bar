@@ -1,0 +1,75 @@
+.sidebar {
+  z-index: -5;
+
+  position: fixed;
+  width: 240px;
+  left: -240px;
+  height: 100%;
+  top: 0%;
+  background: #1e1e1e;
+  transition: all 0.5s ease;
+}
+.sidebar header {
+  font-size: 28px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #1b1b1b;
+  user-select: none;
+  font-family: "Montserrat", sans-serif;
+}
+.heading {
+  /* display: block; */
+  height: 65px;
+  width: 100%;
+  color: white;
+  line-height: 65px;
+
+  box-sizing: border-box;
+
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.5s ease;
+}
+
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  /* position: absolute; */
+  position: fixed;
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+  z-index: -2px;
+  margin-left: -550px;
+/* text-align: center; */
+text-align: center;
+  font-size:30px;
+  background: #1e1e1e;
+  height: 35px;
+  width: 40px;
+
+  line-height: 45px;
+}
+.icons{
+    padding-bottom:15px;
+}
+label #cancel {
+  opacity: 0;
+  visibility: hidden;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  margin-left: 245px;
+  opacity: 0;
+  /* visibility: visible; */
+}
+#check:checked ~ label #cancel {
+  margin-left: -450px;
+  background: #1e1e1e;
+  opacity: 1;
+  visibility: visible;
+}
